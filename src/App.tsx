@@ -6,10 +6,14 @@ import {BrowserRouter, Route} from "react-router-dom";
 import {Header} from "./components/header/Header";
 import {Button} from "./components/myButton/Button";
 
+import {UseState} from "./components/useState/UseState";
+
+
 
 type AppPropsType = {
     button1Click:(subs:string, age:number) => void
-        button2Click:(subs:string, age:number) => void
+    button2Click:(subs:string, age:number) => void
+
 }
 
 
@@ -23,6 +27,7 @@ function App(props:AppPropsType):JSX.Element {
             <div className="app-wrapper-content">
                 <Route render = {() => <Button title={"My First YouTube Chanel"} callBack={()=>props.button1Click("Sergio", 21)} />} path={"/button"}/>
                 <Route render = {() => <Button title={"My Second YouTube Chanel"} callBack={()=>props.button2Click("Alice", 20)} />} path={"/button"}/>
+                <Route render = {() => <UseState />} path={"/useState"}/>
             </div>
 
         </div>
