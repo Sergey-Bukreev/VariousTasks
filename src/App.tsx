@@ -7,19 +7,22 @@ import {Header} from "./components/header/Header";
 import {Button} from "./components/myButton/Button";
 
 
-
 type AppPropsType = {
-    onClickHandler: (name:string) => void
+    button1Click:(subs:string, age:number) => void
+        button2Click:(subs:string, age:number) => void
 }
 
-function App(props:AppPropsType) {
-  return (
+
+function App(props:AppPropsType):JSX.Element {
+
+    return (
     <BrowserRouter>
         <div className="app-wrapper">
            <Header />
             <NavBar />
             <div className="app-wrapper-content">
-                <Route render = {() => <Button title={"MyFirstYouTubeChanel"} onClickHandler={props.onClickHandler} />} path={"/button"}/>
+                <Route render = {() => <Button title={"My First YouTube Chanel"} callBack={()=>props.button1Click("Sergio", 21)} />} path={"/button"}/>
+                <Route render = {() => <Button title={"My Second YouTube Chanel"} callBack={()=>props.button2Click("Alice", 20)} />} path={"/button"}/>
             </div>
 
         </div>
