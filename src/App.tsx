@@ -6,8 +6,9 @@ import {BrowserRouter, Route} from "react-router-dom";
 import {Header} from "./components/header/Header";
 import {Button} from "./components/myButton/Button";
 
-import {UseState} from "./components/useState/UseState";
-import {FilterTasks} from "./components/filterTasks/FilterTasks";
+import {UseState} from "./Tasks/useState/UseState";
+import {FilterTasks} from "./Tasks/filterTasks/FilterTasks";
+import {InputTask} from "./Tasks/inputTask/InputTask";
 
 
 
@@ -30,6 +31,7 @@ function App(props:AppPropsType):JSX.Element {
                 <Route render = {() => <Button title={"My Second YouTube Chanel"} callBack={()=>props.button2Click("Alice", 20)} />} path={"/button"}/>
                 <Route render = {() => <UseState />} path={"/useState"}/>
                 <Route render = {() => <FilterTasks />} path={"/filterTask"}/>
+                <Route render = {() => <InputTask />} path={"/inputTask"}/>
 
             </div>
 

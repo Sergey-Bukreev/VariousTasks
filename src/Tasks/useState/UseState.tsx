@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Button} from "../myButton/Button";
+import {Button} from "../../components/myButton/Button";
 import classes from "./UseState.module.css"
 
 
