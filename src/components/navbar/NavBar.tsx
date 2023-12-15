@@ -12,6 +12,9 @@ export const NavBar:React.FC = () => {
             <div>
                 <NavLink to={"/useState"} className={classes.item} >useState Tasks</NavLink>
             </div>
+            <div>
+                <NavLink to={"/filterTask"} className={classes.item} >Filter Task</NavLink>
+            </div>
 
         </nav>
     );

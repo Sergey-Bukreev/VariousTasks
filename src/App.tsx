@@ -7,6 +7,7 @@ import {Header} from "./components/header/Header";
 import {Button} from "./components/myButton/Button";
 
 import {UseState} from "./components/useState/UseState";
+import {FilterTasks} from "./components/filterTasks/FilterTasks";
 
 
 
@@ -28,6 +29,8 @@ function App(props:AppPropsType):JSX.Element {
                 <Route render = {() => <Button title={"My First YouTube Chanel"} callBack={()=>props.button1Click("Sergio", 21)} />} path={"/button"}/>
                 <Route render = {() => <Button title={"My Second YouTube Chanel"} callBack={()=>props.button2Click("Alice", 20)} />} path={"/button"}/>
                 <Route render = {() => <UseState />} path={"/useState"}/>
+                <Route render = {() => <FilterTasks />} path={"/filterTask"}/>
+
             </div>
 
         </div>

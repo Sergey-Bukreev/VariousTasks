@@ -1,0 +1,11 @@
+.filterTask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonWraper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 80px;
+}
