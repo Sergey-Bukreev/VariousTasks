@@ -26,7 +26,7 @@ export type GovermantType = {
 }
 
 // @ts-ignore
-const city:CityType = {
+export const city:CityType = {
     houses: [
         {
             buildedAt: 2012,
