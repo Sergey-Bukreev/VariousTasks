@@ -6,6 +6,7 @@ export type CityType = {
 
 }
 export type HouseType = {
+    id?: number
     buildedAt: number
     repaired: boolean
     address: AdressType
@@ -39,7 +40,8 @@ export const city:CityType = {
             }
 
         },
-        { buildedAt: 2008,
+        {
+            buildedAt: 2008,
             repaired:false,
             address:{
                 number: 100,
