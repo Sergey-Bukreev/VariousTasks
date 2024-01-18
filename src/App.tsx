@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.css';
-import NavBar from "./components/navbar/NavBar";
+import NavBar from "./layout/navbar/NavBar";
 import {BrowserRouter, Route} from "react-router-dom";
-
-import {Header} from "./components/header/Header";
+import {Header} from "./layout/header/Header";
 import {Button} from "./components/myButton/Button";
-
 import {UseState} from "./Tasks/useState/UseState";
 import {FilterTasks} from "./Tasks/filterTasks/FilterTasks";
 import {InputTask} from "./Tasks/inputTask/InputTask";
+
 
 
 

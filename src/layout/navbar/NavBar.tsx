@@ -19,6 +19,7 @@ export const NavBar:React.FC = () => {
                 <NavLink to={"/inputTask"} className={classes.item} >Input Task</NavLink>
             </div>
 
+
         </nav>
     );
 };
